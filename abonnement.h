@@ -1,7 +1,16 @@
 #ifndef ABONNEMENT_H
 #define ABONNEMENT_H
-#include<QDate>
+#include <QString>
+#include <QChar>
+#include <QSqlQuery>
 #include <QSqlQueryModel>
+#include <QtCharts>
+#include <QChartView>
+#include <QPieSeries>
+#include <QFile>
+#include <QTextStream>
+#include <QDebug>
+#include <QMessageBox>
 
 
 class Abonnement

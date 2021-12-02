@@ -1,8 +1,16 @@
 #ifndef CLIENT_H
 #define CLIENT_H
 #include <QString>
-#include<QSqlQuery>
-#include<QSqlQueryModel>
+#include <QChar>
+#include <QSqlQuery>
+#include <QSqlQueryModel>
+#include <QtCharts>
+#include <QChartView>
+#include <QPieSeries>
+#include <QFile>
+#include <QTextStream>
+#include <QDebug>
+#include <QMessageBox>
 class Client
 {
 
@@ -25,7 +33,24 @@ public:
         bool ajouter();
         QSqlQueryModel* afficher();
         bool update(int , QString ,QString ,QString ,int, QString );
-              bool supprimer(int);
+        bool supprimer(int);
+              /*...............Metier...............*/
+        QSqlQueryModel *load();
+        bool clear();
+        int count(int, QString);
+        QString size();
+        QChartView * piechart();
+        QChartView * piechart2();
+        QString read(QString);
+        void write(QString,QString,QString);
+        QString time();
+        void clearh(QString);
+        QSqlQueryModel * rechercher(QString );
+        QSqlQueryModel * tri_id_ab();
+        QSqlQueryModel * tri_age();
+        QSqlQueryModel * tri_sexe();
+        void stats1(QString ,QString ,int,int,QString);
+
 private:
   int id_ab,age;
   QString nom,prenom,region,sexe;

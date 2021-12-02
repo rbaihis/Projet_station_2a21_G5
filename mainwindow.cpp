@@ -3,22 +3,47 @@
 #include <QtDebug>
 #include <QString>
 #include <QDate>
-#include <QMessageBox>
-#include <QIntValidator>
 #include <QSystemTrayIcon>
 #include <QtPrintSupport/QPrinter>
-#include <QPdfWriter>
-#include <QPainter>
 #include <QFileDialog>
-#include <QTextDocument>
-#include <QTextEdit>
 #include <qsqlquery.h>
 #include "client.h"
+using namespace std;
+#include <QPieSlice>
+#include <QPieSeries>
+#include <QtCharts/QChartView>
+#include "excel.h"
+#include <iostream>
+#include <fstream>
+#include <QMessageBox>
+#include <QIntValidator>
+#include <QSqlQueryModel>
+#include <QSqlQuery>
+#include <QFile>
+#include <QSortFilterProxyModel>
+#include <QPdfWriter>
+#include <QPainter>
+#include <QTextDocument>
+#include <QTextEdit>
+#include <QTextStream>
+#include <QWidget>
+#include <QtSvg/QSvgRenderer>
+#include <QDirModel>
+#include "qrcode.h"
+#include "qrwidget.h"
+QT_CHARTS_USE_NAMESPACE
+using qrcodegen::QrCode;
+using qrcodegen::QrSegment;
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->le_id->setValidator(new QIntValidator (10000,99999,this));
+    ui->tab_client->setModel(C.afficher());
+    C.write(C.time(),"App started",File);
+    ui->textBrowser->setText(C.read(File));
 }
 
 MainWindow::~MainWindow()
@@ -53,6 +78,8 @@ if(test){
     ui->les_region->setCurrentText("");
     ui->le_age->setText("");
      ui->le_sexe->setCurrentText("");
+     C.write(C.time(),"Client Ajouté",File);
+     ui->textBrowser->setText(C.read(File));
 
     ui->tab_client->setModel(c.afficher());//actualisation
     QSystemTrayIcon *notifyIcon = new QSystemTrayIcon;
@@ -198,6 +225,157 @@ void MainWindow::on_pb_supprimer_clicked()
           QObject::tr("Echec de suppression.\n"
           "Click Cancel to exit"), QMessageBox::Cancel);
 
+
+
+
+}
+void MainWindow::stats(QString table,QString critere,int valeur1,int valeur2,QString unite)
+{
+    QSqlQueryModel * model= new QSqlQueryModel();
+    QString valeur1QString=QString::number(valeur1);
+    QString valeur2QString=QString::number(valeur2);
+                model->setQuery("select * from "+table+" where "+critere+"<"+valeur1QString);
+                float countFirst=model->rowCount();
+                model->setQuery("select * from "+table+" where " +critere+" between " +valeur1QString+ " and "+valeur2QString);
+                float countSecond=model->rowCount();
+                model->setQuery("select * from "+table+" where " +critere+">"+valeur2QString);
+                float countThird=model->rowCount();
+                float total=countFirst+countSecond+countThird;
+                QString a=QString("moins de "+valeur1QString+" "+unite+" "+QString::number((countFirst*100)/total,'f',2)+"%" );
+                QString b=QString("entre "+valeur1QString+ " et " +valeur2QString+" "+unite+" "+QString::number((countSecond*100)/total,'f',2)+"%" );
+                QString c=QString("Plus que "+valeur2QString +" "+unite+" "+QString::number((countThird*100)/total,'f',2)+"%" );
+                QPieSeries *series = new QPieSeries();
+                series->append(a,countFirst);
+                series->append(b,countSecond);
+                series->append(c,countThird);
+        if (countFirst!=0)
+        {QPieSlice *slice = series->slices().at(0);
+         slice->setLabelVisible();
+         slice->setPen(QPen());}
+        if ( countSecond!=0)
+        {
+                 QPieSlice *slice1 = series->slices().at(1);
+                 slice1->setLabelVisible();
+        }
+       if(countThird!=0)
+        {
+                 QPieSlice *slice2 = series->slices().at(2);
+                 slice2->setLabelVisible();
+        }
+                QChart *chart = new QChart();
+                chart->addSeries(series);
+                if(critere=="AGE")
+                    critere="age";
+                chart->setTitle("Pourcentage Par " +critere+":Nombre Des " +table+" :" +QString::number(total));
+                chart->legend()->hide();
+                QChartView *chartView = new QChartView(chart);
+                chartView->setRenderHint(QPainter::Antialiasing);
+                chartView->resize(1000,500);
+                chartView->show();
+
+}
+
+
+
+
+
+void MainWindow::on_pb_stat_age_clicked()
+{
+    stats("CLIENT","AGE",18,55,"ANS");
+
+}
+
+void MainWindow::on_le_recherche_client_textChanged(const QString &arg1)
+{
+    if(ui->le_recherche_client->text()!="")
+                    {
+                        QString id_ab=ui->le_recherche_client->text();
+                        ui->tab_client->setModel(C.rechercher(id_ab));
+                    }
+                     else
+                        ui->tab_client->setModel(C.afficher());
+}
+
+void MainWindow::on_cb_tri_client_currentIndexChanged(int index)
+{
+    if(index==1)
+                  ui->tab_client->setModel(C.tri_id_ab());
+        else if(index==2)
+                  ui->tab_client->setModel(C.tri_age());
+        else if(index==3)
+                  ui->tab_client->setModel(C.tri_sexe());
+}
+
+void MainWindow::on_pb_excel_clicked()
+{
+QString fileName = QFileDialog::getSaveFileName(this, tr("Exportation en fichier Excel"), qApp->applicationDirPath (),
+                                                            tr("Fichiers d'extension Excel (*.xls)"));
+            if (fileName.isEmpty())
+                return;
+
+            EXCEL obj(fileName, "test-bd", ui->tab_client);
+
+
+            obj.addField(0, "id_ab", "char(20)");
+            obj.addField(1, "nom", "char(20)");
+            obj.addField(2, "prenom", "char(20)");
+            obj.addField(3, "ragion", "char(20)");
+            obj.addField(4, "age", "char(20)");
+            obj.addField(5, "sexe", "char(20)");
+
+
+
+
+            int retVal = obj.export2Excel();
+
+            if( retVal > 0)
+            {
+                QMessageBox::information(this, tr("FAIS!"),
+                                         QString(tr("%1 enregistrements exportés!")).arg(retVal)
+                                         );
+ }           }
+
+
+
+
+
+void MainWindow::on_CLEAR_clicked()
+{
+    C.clearh(File);
+    ui->textBrowser->setText(C.read(File));
+}
+
+
+void MainWindow::on_pushButton_clicked()
+{
+    if(ui->tab_client->currentIndex().row()==-1)
+                   QMessageBox::information(nullptr, QObject::tr("Suppression"),
+                                            QObject::tr("Veuillez Choisir un animal du Tableau.\n"
+                                                        "Click Ok to exit."), QMessageBox::Ok);
+               else
+               {
+
+                    int le_id=ui->tab_client->model()->data(ui->tab_client->model()->index(ui->tab_client->currentIndex().row(),0)).toInt();
+                    const QrCode qr = QrCode::encodeText(std::to_string(le_id).c_str(), QrCode::Ecc::LOW);
+                    std::ofstream myfile;
+                    myfile.open ("qrcode.svg") ;
+                    myfile << qr.toSvgString(1);
+                    myfile.close();
+                    QSvgRenderer svgRenderer(QString("qrcode.svg"));
+                    QPixmap pix( QSize(90, 90) );
+                    QPainter pixPainter( &pix );
+                    svgRenderer.render( &pixPainter );
+                    ui->QRCODE_3->setPixmap(pix);
+               }
+    }
+
+
+
+void MainWindow::on_tab_client_activated(const QModelIndex &index)
+{
+     ui->le_id->setText(ui->tab_client->model()->data(ui->tab_client->model()->index(index.row(),0)).toString());
+     ui->le_nom->setText(ui->tab_client->model()->data(ui->tab_client->model()->index(index.row(),1)).toString());
+     ui->le_prenom->setText(ui->tab_client->model()->data(ui->tab_client->model()->index(index.row(),2)).toString());
 
 
 

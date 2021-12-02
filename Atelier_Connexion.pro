@@ -1,13 +1,18 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2018-10-26T21:45:23
+# Project created by QtCreator 2020-10-26T21:45:23
 #
 #-------------------------------------------------
-
-QT       += core gui sql
-
+CONFIG +=console
+QT += network
+QT += core gui
+QT += core gui charts
+QT += core gui sql printsupport multimedia
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-
+CONFIG += c++11
+QT += sql
+QT += multimedia
+QT +=svg
 TARGET = Atelier_Connexion
 TEMPLATE = app
 
@@ -27,15 +32,23 @@ CONFIG += c++11
 SOURCES += \
     abonnement.cpp \
     client.cpp \
+    excel.cpp \
         main.cpp \
         mainwindow.cpp \
-    connection.cpp
+    connection.cpp \
+    qrcode.cpp \
+    qrcodegeneratordemo.cpp \
+    qrcodegeneratorworker.cpp \
+    qrwidget.cpp
 
 HEADERS += \
     abonnement.h \
     client.h \
+    excel.h \
         mainwindow.h \
-    connection.h
+    connection.h \
+    qrcode.h \
+    qrwidget.h
 
 FORMS += \
         mainwindow.ui
