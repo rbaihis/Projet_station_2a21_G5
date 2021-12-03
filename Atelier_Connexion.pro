@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql printsupport charts
+QT       += core gui sql printsupport charts serialport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -25,6 +25,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+    arduino.cpp \
+    arduinomaq.cpp \
     dialog.cpp \
         main.cpp \
         mainwindow.cpp \
@@ -33,6 +35,8 @@ SOURCES += \
     reclamation.cpp
 
 HEADERS += \
+    arduino.h \
+    arduinomaq.h \
     dialog.h \
         mainwindow.h \
     connection.h \
@@ -40,6 +44,7 @@ HEADERS += \
     reclamation.h
 
 FORMS += \
+        arduinomaq.ui \
         dialog.ui \
         mainwindow.ui \
         maquette_yesmin.ui

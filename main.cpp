@@ -11,14 +11,14 @@ int main(int argc, char *argv[])
     QTranslator t;
     QTranslator guiTranslator;
     QStringList languages;
-    languages << "English"<<"Arabic";
+    languages << "English"<<"Frensh";
     QString lang=QInputDialog::getItem(NULL,"Select Language","Language" , languages);
     if (lang == "English" )
     {
         t.load(":/english2.qm");
 
        guiTranslator.load("C:/Qt/Qt5.9.9/5.9.9/mingw53_32/translations/qtbase_en.qm");
-    } else if (lang == "Arabic")
+    } else if (lang == "Frensh")
         t.load(":/arabic2.qm");
     guiTranslator.load("C:/Qt/Qt5.9.9/5.9.9/mingw53_32/translations/qtbase_ar.qm");
 

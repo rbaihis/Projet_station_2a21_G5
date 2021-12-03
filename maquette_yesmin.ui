@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>6</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
@@ -54,8 +54,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Nom </string>
@@ -71,10 +70,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-
-
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Prénom</string>
@@ -90,9 +86,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Cin</string>
@@ -108,9 +102,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Num Télèphone</string>
@@ -297,7 +289,7 @@ color: rgb(84, 105, 127);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Num Bus </string>
@@ -313,9 +305,7 @@ color: rgb(84, 105, 127);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Num Station</string>
@@ -358,8 +348,7 @@ color: rgb(84, 105, 127);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>1) Resources Humaine</string>
@@ -375,8 +364,7 @@ color: rgb(84, 105, 127);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>2) Ticket</string>
@@ -392,8 +380,7 @@ color: rgb(84, 105, 127);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>3) Bus</string>
@@ -409,8 +396,7 @@ color: rgb(84, 105, 127);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>4) Station</string>
@@ -436,8 +422,7 @@ color: rgb(84, 105, 127);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>5) Autres</string>
@@ -478,10 +463,23 @@ color: rgb(84, 105, 127);</string>
       <property name="geometry">
        <rect>
         <x>40</x>
-        <y>40</y>
+        <y>80</y>
         <width>591</width>
         <height>321</height>
        </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_arduino">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>30</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Arduino</string>
       </property>
      </widget>
     </widget>
@@ -516,21 +514,8 @@ color: rgb(84, 105, 127);</string>
     <widget class="QPushButton" name="pb_supprimer">
      <property name="geometry">
       <rect>
-       <x>620</x>
-       <y>390</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Supprimer</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pb_supprimer_2">
-     <property name="geometry">
-      <rect>
        <x>590</x>
-       <y>200</y>
+       <y>190</y>
        <width>75</width>
        <height>23</height>
       </rect>
@@ -579,9 +564,7 @@ color: rgb(84, 105, 127);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Nom</string>
@@ -597,9 +580,7 @@ color: rgb(84, 105, 127);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Num Bus</string>
@@ -615,8 +596,7 @@ color: rgb(84, 105, 127);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Prénom</string>
@@ -632,8 +612,7 @@ color: rgb(84, 105, 127);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Num Telephone</string>
@@ -649,9 +628,7 @@ color: rgb(84, 105, 127);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Num Station</string>
@@ -754,8 +731,7 @@ color: rgb(84, 105, 127);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Cin</string>
@@ -866,9 +842,7 @@ color: rgb(84, 105, 127);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>1) Resources Humaines</string>
@@ -884,9 +858,7 @@ color: rgb(84, 105, 127);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>2)Ticket</string>
@@ -902,9 +874,7 @@ color: rgb(84, 105, 127);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>3)Bus</string>
@@ -920,8 +890,7 @@ color: rgb(84, 105, 127);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>4)Station</string>
@@ -937,8 +906,7 @@ color: rgb(84, 105, 127);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Old Antic Outline&quot;;
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>5)Autres</string>

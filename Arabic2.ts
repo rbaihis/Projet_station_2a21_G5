@@ -181,7 +181,7 @@ click cancel to exit</source>
     <message>
         <location filename="maquette_yesmin.ui" line="14"/>
         <source>Dialog</source>
-        <translation></translation>
+        <translation>إدارة الملاحظات</translation>
     </message>
     <message>
         <location filename="maquette_yesmin.ui" line="30"/>

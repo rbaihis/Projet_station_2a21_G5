@@ -143,7 +143,7 @@ click cancel to exit</source>
     <name>maquette_yesmin</name>
     <message>
         <source>Dialog</source>
-        <translation></translation>
+        <translation>claims management</translation>
     </message>
     <message>
         <source>Ajouter Recalamation</source>
