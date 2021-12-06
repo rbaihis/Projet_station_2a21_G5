@@ -488,7 +488,7 @@ qDebug()<<"querry select just happened above"<<endl;
     {
     role=myquery.value(14).toString();
     id=myquery.value(0).toString();
-     password=myquery.value(3).toString();
+    password=myquery.value(3).toString();
 
      }
             qDebug()<<"\ni am the cureent user no role *"<<role<<"*"<<endl;
@@ -536,6 +536,26 @@ void MainWindow::on_pushButton_login_clicked()
     if(result==true && (role_what=="admin") )
     {
         ui->stackedWidget_main->setCurrentIndex(1);
+        ui->pushButton_logout->show();
+    }
+    else if(result==true && (role_what=="bus_agent") )
+    {
+        ui->stackedWidget_main->setCurrentIndex(2);
+        ui->pushButton_logout->show();
+    }
+    else if(result==true && (role_what=="abonn_agent") )
+    {
+        ui->stackedWidget_main->setCurrentIndex(3);
+        ui->pushButton_logout->show();
+    }
+    else if(result==true && (role_what=="station_agent") )
+    {
+        ui->stackedWidget_main->setCurrentIndex(4);
+        ui->pushButton_logout->show();
+    }
+    if(result==true && (role_what=="reclam_agent") )
+    {
+        ui->stackedWidget_main->setCurrentIndex(5);
         ui->pushButton_logout->show();
     }
     else if(result==true)
@@ -714,9 +734,12 @@ void MainWindow::on_pushButton_clear_chercher_clicked()
     //reset tablew view to default
     custom_by_me_Update_tableView_and_Row_Count_label();
 
+    ui->comboBox_comparison->currentIndexChanged(0);
+
 }
 void MainWindow:: reset_chercher_view()
 {
+
     ui->dateEdit_age_chercher->hide();
     ui->comboBox_comparison->hide();
     ui->spinBox_age_or_score_search->hide();

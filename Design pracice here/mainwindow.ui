@@ -26,6 +26,9 @@
       <height>661</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
     <property name="currentIndex">
      <number>1</number>
     </property>
@@ -39,6 +42,34 @@
         <height>28</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+
+{
+
+background : qlineargradient(spread:pad, x1:0.467, y1:0, x2:0.482, y2:1, stop:0 rgba(22, 85,110, 255), stop:1 rgba(95, 196, 208, 255));
+
+border-radius:15px;
+
+color:white;
+border-color:#FFFFFF;
+
+border: 2px solid black;
+
+border-radius: 10px;
+
+}
+
+QPushButton:hover
+
+{
+
+background:qlineargradient(spread:pad, x1:0.457286, y1:0.381, x2:0.508, y2:1, stop:0 rgba(95, 196, 208, 255), stop:1 rgba(22, 85,110, 255))
+
+}
+
+</string>
+      </property>
       <property name="text">
        <string>PushButton</string>
       </property>
@@ -51,6 +82,269 @@
         <width>181</width>
         <height>22</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabWidget
+
+{
+
+background:qlineargradient(spread:pad, x1:0.512, y1:0.938, x2:0.513, y2:1, stop:0 rgba(150, 150, 150, 255), stop:1 rgba(6, 10, 255, 255));
+
+}
+
+
+
+QGroupBox
+
+{
+
+
+
+background :qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+
+}
+
+QDialog{
+
+
+
+background:qlineargradient(spread:pad, x1:0.516899, y1:0.154, x2:0.538, y2:1, stop:0 rgba(42, 45, 89, 255), stop:1 rgba(0, 255, 19, 255));
+
+}
+
+QLineEdit
+
+{
+
+background : qconicalgradient(cx:0, cy:0, angle:264, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(167, 255, 53, 255));
+
+border-radius:10px;
+
+color : #717072;
+
+font-family:century;
+
+border-bottom:1px solid#717072;
+
+}
+
+QLineEdit:hover
+
+{
+
+background :qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(139, 140, 138, 255), stop:1 rgba(255, 255, 255, 255));
+
+color : #717072;
+
+border-bottom:1px solid rgb(90, 93, 255);
+
+font-family:century;
+
+}
+
+QLineEdit:focus
+
+{
+
+background :qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(139, 140, 138, 255), stop:1 rgba(255, 255, 255, 255));
+
+color : #717072;
+
+border-bottom:1px solid rgb(81, 255, 0);
+
+font-family:century;
+
+}
+
+QDateEdit{
+
+background : qconicalgradient(cx:0, cy:0, angle:264, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(167, 255, 53, 255));
+
+border-radius:10px;
+
+color : #717072;
+
+font-family:century;
+
+border-bottom:1px solid#717072;
+
+}
+
+QDateEdit:focus
+
+{border:1px solid rgb(81, 255, 0);
+
+background :qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(139, 140, 138, 255), stop:1 rgba(255, 255, 255, 255));
+
+}
+
+QDateEdit:hover
+
+{
+
+background :qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(139, 140, 138, 255), stop:1 rgba(255, 255, 255, 255));
+
+}
+
+
+
+QLabel{
+
+color : black;
+
+font-size:15px;
+
+}
+
+
+
+QComboBox
+
+{
+
+border-radius:10px;
+
+color : #717072;
+
+font-family:century;
+
+border-bottom:1px solid#717072; border: 1px solid gray;
+
+border-radius: 3px; padding:center;
+
+background : qconicalgradient(cx:0, cy:0, angle:264, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(167, 255, 53, 255));
+
+min-width: 6em;
+
+
+
+}
+
+
+
+QComboBox:focus{
+
+border:1px solid rgb(81, 255, 0);
+
+
+
+}
+
+
+
+QComboBox:editable {
+
+background:rgb(209, 209, 209);
+
+
+
+
+
+}
+
+
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+
+background:qconicalgradient(cx:0, cy:0, angle:264, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(167, 255, 53, 255));
+
+border-radius:10px;
+
+
+
+}
+
+
+
+
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+
+background: qconicalgradient(cx:0, cy:0, angle:264, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(167, 255, 53, 255));
+
+
+
+
+
+}
+
+
+
+QComboBox QAbstractItemView {
+
+border: 2px solid green;
+
+selection-background-color:rgb(56,58,89);
+
+background:white;
+
+selection-color:white;
+
+outline: none;
+
+
+
+}
+
+
+
+
+
+QTableView {
+
+border-radius:10px;
+
+selection-background-color: qconicalgradient(cx:0.997251, cy:0.994, angle:333.7, stop:0 rgba(26, 255, 0, 255), stop:1 rgba(255, 255, 255, 255));
+
+color:white;
+
+}
+
+
+
+QTableView:focus
+
+{
+
+
+
+border:1px solid rgb(26, 255, 0);
+
+}
+
+QMessageBox
+
+{
+
+background:qlineargradient(spread:pad, x1:0.512, y1:0.938, x2:0.513, y2:1, stop:0 rgba(150, 150, 150, 255), stop:1 rgba(6, 10, 255, 255));
+
+
+
+}
+
+
+
+QPushButton
+
+{
+
+background:qlineargradient(spread:pad, x1:0, y1:0.46, x2:1, y2:0.483, stop:0 rgba(255, 88, 255, 255), stop:1 rgba(116, 106, 155, 255));
+
+}
+
+QPushButton:hover
+
+{
+
+background:qlineargradient(spread:pad, x1:0, y1:0.46, x2:1, y2:0.483, stop:0 rgba(255, 88, 241, 255), stop:1 rgba(116, 106, 255, 255));
+
+color:white;
+
+
+
+}</string>
       </property>
       <property name="text">
        <string>12345678</string>
@@ -68,11 +362,274 @@
         <height>22</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">QTabWidget
+
+{
+
+background:qlineargradient(spread:pad, x1:0.512, y1:0.938, x2:0.513, y2:1, stop:0 rgba(150, 150, 150, 255), stop:1 rgba(6, 10, 255, 255));
+
+}
+
+
+
+QGroupBox
+
+{
+
+
+
+background :qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+
+}
+
+QDialog{
+
+
+
+background:qlineargradient(spread:pad, x1:0.516899, y1:0.154, x2:0.538, y2:1, stop:0 rgba(42, 45, 89, 255), stop:1 rgba(0, 255, 19, 255));
+
+}
+
+QLineEdit
+
+{
+
+background : qconicalgradient(cx:0, cy:0, angle:264, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(167, 255, 53, 255));
+
+border-radius:10px;
+
+color : #717072;
+
+font-family:century;
+
+border-bottom:1px solid#717072;
+
+}
+
+QLineEdit:hover
+
+{
+
+background :qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(139, 140, 138, 255), stop:1 rgba(255, 255, 255, 255));
+
+color : #717072;
+
+border-bottom:1px solid rgb(90, 93, 255);
+
+font-family:century;
+
+}
+
+QLineEdit:focus
+
+{
+
+background :qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(139, 140, 138, 255), stop:1 rgba(255, 255, 255, 255));
+
+color : #717072;
+
+border-bottom:1px solid rgb(81, 255, 0);
+
+font-family:century;
+
+}
+
+QDateEdit{
+
+background : qconicalgradient(cx:0, cy:0, angle:264, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(167, 255, 53, 255));
+
+border-radius:10px;
+
+color : #717072;
+
+font-family:century;
+
+border-bottom:1px solid#717072;
+
+}
+
+QDateEdit:focus
+
+{border:1px solid rgb(81, 255, 0);
+
+background :qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(139, 140, 138, 255), stop:1 rgba(255, 255, 255, 255));
+
+}
+
+QDateEdit:hover
+
+{
+
+background :qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(139, 140, 138, 255), stop:1 rgba(255, 255, 255, 255));
+
+}
+
+
+
+QLabel{
+
+color : black;
+
+font-size:15px;
+
+}
+
+
+
+QComboBox
+
+{
+
+border-radius:10px;
+
+color : #717072;
+
+font-family:century;
+
+border-bottom:1px solid#717072; border: 1px solid gray;
+
+border-radius: 3px; padding:center;
+
+background : qconicalgradient(cx:0, cy:0, angle:264, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(167, 255, 53, 255));
+
+min-width: 6em;
+
+
+
+}
+
+
+
+QComboBox:focus{
+
+border:1px solid rgb(81, 255, 0);
+
+
+
+}
+
+
+
+QComboBox:editable {
+
+background:rgb(209, 209, 209);
+
+
+
+
+
+}
+
+
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+
+background:qconicalgradient(cx:0, cy:0, angle:264, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(167, 255, 53, 255));
+
+border-radius:10px;
+
+
+
+}
+
+
+
+
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+
+background: qconicalgradient(cx:0, cy:0, angle:264, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(167, 255, 53, 255));
+
+
+
+
+
+}
+
+
+
+QComboBox QAbstractItemView {
+
+border: 2px solid green;
+
+selection-background-color:rgb(56,58,89);
+
+background:white;
+
+selection-color:white;
+
+outline: none;
+
+
+
+}
+
+
+
+
+
+QTableView {
+
+border-radius:10px;
+
+selection-background-color: qconicalgradient(cx:0.997251, cy:0.994, angle:333.7, stop:0 rgba(26, 255, 0, 255), stop:1 rgba(255, 255, 255, 255));
+
+color:white;
+
+}
+
+
+
+QTableView:focus
+
+{
+
+
+
+border:1px solid rgb(26, 255, 0);
+
+}
+
+QMessageBox
+
+{
+
+background:qlineargradient(spread:pad, x1:0.512, y1:0.938, x2:0.513, y2:1, stop:0 rgba(150, 150, 150, 255), stop:1 rgba(6, 10, 255, 255));
+
+
+
+}
+
+
+
+QPushButton
+
+{
+
+background:qlineargradient(spread:pad, x1:0, y1:0.46, x2:1, y2:0.483, stop:0 rgba(255, 88, 255, 255), stop:1 rgba(116, 106, 155, 255));
+
+}
+
+QPushButton:hover
+
+{
+
+background:qlineargradient(spread:pad, x1:0, y1:0.46, x2:1, y2:0.483, stop:0 rgba(255, 88, 241, 255), stop:1 rgba(116, 106, 255, 255));
+
+color:white;
+
+
+
+}</string>
+      </property>
       <property name="inputMethodHints">
        <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
       </property>
       <property name="text">
-       <string>azerty</string>
+       <string>password</string>
       </property>
       <property name="maxLength">
        <number>25</number>
@@ -109,7 +666,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>1</number>
       </property>
       <property name="elideMode">
        <enum>Qt::ElideLeft</enum>
@@ -128,7 +685,7 @@
          </rect>
         </property>
         <property name="currentIndex">
-         <number>2</number>
+         <number>0</number>
         </property>
         <widget class="QWidget" name="tab_ajouter_personnel">
          <attribute name="title">
@@ -559,7 +1116,7 @@
             <rect>
              <x>370</x>
              <y>230</y>
-             <width>131</width>
+             <width>144</width>
              <height>22</height>
             </rect>
            </property>
@@ -985,10 +1542,15 @@
             <rect>
              <x>10</x>
              <y>90</y>
-             <width>61</width>
+             <width>144</width>
              <height>22</height>
             </rect>
            </property>
+           <item>
+            <property name="text">
+             <string/>
+            </property>
+           </item>
            <item>
             <property name="text">
              <string>=</string>
@@ -1023,7 +1585,7 @@
             <rect>
              <x>100</x>
              <y>90</y>
-             <width>101</width>
+             <width>144</width>
              <height>22</height>
             </rect>
            </property>
@@ -1230,7 +1792,7 @@
             <rect>
              <x>10</x>
              <y>60</y>
-             <width>73</width>
+             <width>144</width>
              <height>31</height>
             </rect>
            </property>
@@ -1312,25 +1874,6 @@
         </property>
         <property name="text">
          <string>envoyer Email</string>
-        </property>
-       </widget>
-       <widget class="QPlainTextEdit" name="plainTextEdit_email_content">
-        <property name="geometry">
-         <rect>
-          <x>620</x>
-          <y>190</y>
-          <width>501</width>
-          <height>321</height>
-         </rect>
-        </property>
-        <property name="contextMenuPolicy">
-         <enum>Qt::NoContextMenu</enum>
-        </property>
-        <property name="plainText">
-         <string/>
-        </property>
-        <property name="maximumBlockCount">
-         <number>0</number>
         </property>
        </widget>
        <widget class="QLineEdit" name="lineEdit_cc_email">
@@ -1571,6 +2114,10 @@
       </widget>
      </widget>
     </widget>
+    <widget class="QWidget" name="page"/>
+    <widget class="QWidget" name="page_2"/>
+    <widget class="QWidget" name="page_3"/>
+    <widget class="QWidget" name="page_4"/>
    </widget>
    <widget class="QLabel" name="label_main_databaseb_status">
     <property name="geometry">
