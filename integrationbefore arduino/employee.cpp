@@ -268,21 +268,21 @@ QSqlQueryModel* Employee:: chercherSORT_employee()
        {
            model->setQuery("SELECT *  FROM employee " + s.where +" " + s.columnwhere1+" " + s.comparisonsymbol1 +s.value1 +" " );
 
-           qDebug()<<  "first if requette where its me executed " "SELECT *  FROM employee " + s.where +" " + s.columnwhere1+" " + s.comparisonsymbol1 +s.value1 +" "  ;
+           qDebug()<<  "first if requette where its me executed now => " "SELECT *  FROM employee " + s.where +" " + s.columnwhere1+" " + s.comparisonsymbol1 +s.value1 +" "  ;
 
        }
        else if( s.allstar=="orderby" )
        {
            model->setQuery("SELECT id_cin,nom,prenom,score,role,datenaissance,creditaccount,debitaccount  FROM employee  order by "+ s.columnwhere2 +"  "+ s.desc1+" " );
 
-           qDebug()<<  "me second if executed order by : "  "SELECT id_cin,nom,prenom,score,role,datenaissance,creditaccount,debitaccount  FROM employee  order by "+ s.columnwhere2 +"  "+ s.desc1+" " ;
+           qDebug()<<  "me second if executed order by its me executed now => "  "SELECT id_cin,nom,prenom,score,role,datenaissance,creditaccount,debitaccount  FROM employee  order by "+ s.columnwhere2 +"  "+ s.desc1+" " ;
 
        }
         else if( s.allstar=="both")
        {
          model->setQuery( " SELECT * FROM employee where " + s.columnwhere1+" " + s.comparisonsymbol1 + " " +s.value1 + " order by "+  " " + s.columnwhere2 +" " + s.desc1+" " );
 
-         qDebug()<<  "me third if executed  where and order by together :  " " SELECT * FROM employee where " + s.columnwhere1+" " + s.comparisonsymbol1 + " " +s.value1 + " order by "+  " " + s.columnwhere2 +" " + s.desc1+" ";
+         qDebug()<<  "me third if executed  where and order by together its me executed now =>  " " SELECT * FROM employee where " + s.columnwhere1+" " + s.comparisonsymbol1 + " " +s.value1 + " order by "+  " " + s.columnwhere2 +" " + s.desc1+" ";
 
        }
 
