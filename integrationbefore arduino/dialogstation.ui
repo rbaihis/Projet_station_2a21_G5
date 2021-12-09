@@ -1,0 +1,1411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogStation</class>
+ <widget class="QDialog" name="DialogStation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1093</width>
+    <height>632</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1001</width>
+     <height>671</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="tabBarAutoHide">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="tab_12">
+    <attribute name="title">
+     <string>Gestion Stations</string>
+    </attribute>
+    <widget class="QTabWidget" name="tabWidget_5">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>0</y>
+       <width>771</width>
+       <height>581</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/img/pngtree-bus-stop-city-png-image_677426.jpg);</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_16">
+      <attribute name="title">
+       <string>basic tasks</string>
+      </attribute>
+      <widget class="QTabWidget" name="tabWidget_8">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>691</width>
+         <height>561</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_20">
+        <attribute name="title">
+         <string>ajouter station</string>
+        </attribute>
+        <widget class="QGroupBox" name="groupBox_6">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>30</y>
+           <width>531</width>
+           <height>331</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>ajouter station</string>
+         </property>
+         <widget class="QLabel" name="label_9">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>90</y>
+            <width>56</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>numero</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_10">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>140</y>
+            <width>56</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>ville</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_11">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>180</y>
+            <width>56</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>region</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_12">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>230</y>
+            <width>71</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string> ID lagent</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="nom_station">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>40</y>
+            <width>191</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(170, 255, 255);</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="le_numero">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>90</y>
+            <width>191</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(170, 255, 255);</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="le_ville">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>130</y>
+            <width>191</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(170, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="le_region">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>180</y>
+            <width>191</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(170, 255, 255);</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="id_agent">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>230</y>
+            <width>191</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(170, 255, 255);</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_8">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>40</y>
+            <width>71</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>nom station</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pb_ajouter">
+          <property name="geometry">
+           <rect>
+            <x>384</x>
+            <y>290</y>
+            <width>91</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+
+padding: 1px;
+
+border-style: solid;
+
+border: 2px solid gray;
+
+border-radius: 8px;
+
+background-color: rgb(143, 143, 143);
+
+border:2px solid #000;
+
+}
+
+QPushButton {
+
+color: #fff !important;
+
+text-transform: uppercase;
+
+text-decoration: none;
+
+background: #e12d4e;
+
+padding: 20px;
+
+border-radius: 5px;
+
+display: inline-block;
+
+border: none;
+
+transition: all 0.4s ease 0s;
+
+}
+
+QPushButton:hover {
+
+background: #434343;
+
+letter-spacing: 1px;
+
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+
+transition: all 0.4s ease 0s;
+
+}</string>
+          </property>
+          <property name="text">
+           <string>ajouter</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_21">
+        <attribute name="title">
+         <string>afficher station</string>
+        </attribute>
+        <widget class="QTableView" name="tablestation">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>10</y>
+           <width>441</width>
+           <height>151</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_afficher">
+         <property name="geometry">
+          <rect>
+           <x>530</x>
+           <y>120</y>
+           <width>91</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+
+padding: 1px;
+
+border-style: solid;
+
+border: 2px solid gray;
+
+border-radius: 8px;
+
+background-color: rgb(143, 143, 143);
+
+border:2px solid #000;
+
+}
+
+QPushButton {
+
+color: #fff !important;
+
+text-transform: uppercase;
+
+text-decoration: none;
+
+background: #e12d4e;
+
+padding: 20px;
+
+border-radius: 5px;
+
+display: inline-block;
+
+border: none;
+
+transition: all 0.4s ease 0s;
+
+}
+
+QPushButton:hover {
+
+background: #434343;
+
+letter-spacing: 1px;
+
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+
+transition: all 0.4s ease 0s;
+
+}</string>
+         </property>
+         <property name="text">
+          <string>afficher</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_7">
+        <attribute name="title">
+         <string>modifier station</string>
+        </attribute>
+        <widget class="QGroupBox" name="groupBox_7">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>10</y>
+           <width>571</width>
+           <height>391</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>modifier station</string>
+         </property>
+         <widget class="QGroupBox" name="groupBox_8">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>141</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>entrer num station</string>
+          </property>
+          <widget class="QLineEdit" name="numstation_edit">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>113</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(170, 255, 255);</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="label_22">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>270</y>
+            <width>51</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>region</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="region_edit">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>270</y>
+            <width>191</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(170, 255, 255);</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_18">
+          <property name="geometry">
+           <rect>
+            <x>15</x>
+            <y>220</y>
+            <width>56</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>ville</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_19">
+          <property name="geometry">
+           <rect>
+            <x>15</x>
+            <y>180</y>
+            <width>56</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Agent</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ville_edit">
+          <property name="geometry">
+           <rect>
+            <x>105</x>
+            <y>220</y>
+            <width>191</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(170, 255, 255);</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="agent_edit">
+          <property name="geometry">
+           <rect>
+            <x>105</x>
+            <y>180</y>
+            <width>191</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(170, 255, 255);</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="nom_edit">
+          <property name="geometry">
+           <rect>
+            <x>105</x>
+            <y>140</y>
+            <width>191</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(170, 255, 255);</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pb_modifier">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>310</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+
+padding: 1px;
+
+border-style: solid;
+
+border: 2px solid gray;
+
+border-radius: 8px;
+
+background-color: rgb(143, 143, 143);
+
+border:2px solid #000;
+
+}
+
+QPushButton {
+
+color: #fff !important;
+
+text-transform: uppercase;
+
+text-decoration: none;
+
+background: #e12d4e;
+
+padding: 20px;
+
+border-radius: 5px;
+
+display: inline-block;
+
+border: none;
+
+transition: all 0.4s ease 0s;
+
+}
+
+QPushButton:hover {
+
+background: #434343;
+
+letter-spacing: 1px;
+
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+
+transition: all 0.4s ease 0s;
+
+}</string>
+          </property>
+          <property name="text">
+           <string>modifier</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_13">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>140</y>
+            <width>47</width>
+            <height>14</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>nom</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_8">
+        <attribute name="title">
+         <string>supprimer station</string>
+        </attribute>
+        <widget class="QGroupBox" name="groupBox_13">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>20</y>
+           <width>221</width>
+           <height>231</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="title">
+          <string>supprimer station</string>
+         </property>
+         <widget class="QPushButton" name="pb_supprimer">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>150</y>
+            <width>141</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+
+padding: 1px;
+
+border-style: solid;
+
+border: 2px solid gray;
+
+border-radius: 8px;
+
+background-color: rgb(143, 143, 143);
+
+border:2px solid #000;
+
+}
+
+QPushButton {
+
+color: #fff !important;
+
+text-transform: uppercase;
+
+text-decoration: none;
+
+background: #e12d4e;
+
+padding: 20px;
+
+border-radius: 5px;
+
+display: inline-block;
+
+border: none;
+
+transition: all 0.4s ease 0s;
+
+}
+
+QPushButton:hover {
+
+background: #434343;
+
+letter-spacing: 1px;
+
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+
+transition: all 0.4s ease 0s;
+
+}</string>
+          </property>
+          <property name="text">
+           <string>supprimer </string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>47</width>
+            <height>14</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>numero</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="numero_del">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>50</y>
+            <width>113</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(170, 255, 255);</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_17">
+      <attribute name="title">
+       <string>advanced tasks</string>
+      </attribute>
+      <widget class="QTabWidget" name="tabWidget_9">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>681</width>
+         <height>571</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_23">
+        <attribute name="title">
+         <string>chercher station</string>
+        </attribute>
+        <widget class="QGroupBox" name="groupBox_22">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>621</width>
+           <height>271</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>entrer num station</string>
+         </property>
+         <widget class="QTableView" name="tableViewja_2">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>20</y>
+            <width>511</width>
+            <height>141</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_recherhche_2">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>320</y>
+           <width>113</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="cobo_crit_2">
+         <property name="geometry">
+          <rect>
+           <x>351</x>
+           <y>320</y>
+           <width>81</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>numero</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>id_agent</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ville</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_6">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>320</y>
+           <width>71</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>RECHERCHER</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_24">
+        <attribute name="title">
+         <string>trier station</string>
+        </attribute>
+        <widget class="QGroupBox" name="groupBox_16">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>40</y>
+           <width>251</width>
+           <height>311</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>trier stations</string>
+         </property>
+         <widget class="QGroupBox" name="groupBox_17">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>201</width>
+            <height>161</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>par</string>
+          </property>
+          <widget class="QPushButton" name="pushButton_32">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>120</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+
+padding: 1px;
+
+border-style: solid;
+
+border: 2px solid gray;
+
+border-radius: 8px;
+
+background-color: rgb(143, 143, 143);
+
+border:2px solid #000;
+
+}
+
+QPushButton {
+
+color: #fff !important;
+
+text-transform: uppercase;
+
+text-decoration: none;
+
+background: #e12d4e;
+
+padding: 20px;
+
+border-radius: 5px;
+
+display: inline-block;
+
+border: none;
+
+transition: all 0.4s ease 0s;
+
+}
+
+QPushButton:hover {
+
+background: #434343;
+
+letter-spacing: 1px;
+
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+
+transition: all 0.4s ease 0s;
+
+}</string>
+           </property>
+           <property name="text">
+            <string>trier</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="col">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>50</y>
+             <width>62</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>numero</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ville</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>id_agent</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QComboBox" name="ord">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>50</y>
+             <width>62</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>asc</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>desc</string>
+            </property>
+           </item>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QTableView" name="tableViewja_3">
+         <property name="geometry">
+          <rect>
+           <x>310</x>
+           <y>70</y>
+           <width>321</width>
+           <height>181</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_27">
+        <attribute name="title">
+         <string>statistiques</string>
+        </attribute>
+        <widget class="QGroupBox" name="groupBox_15">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>10</y>
+           <width>831</width>
+           <height>341</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>calculer profits par station</string>
+         </property>
+         <widget class="QPushButton" name="pushButton_28">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>160</y>
+            <width>141</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+
+padding: 1px;
+
+border-style: solid;
+
+border: 2px solid gray;
+
+border-radius: 8px;
+
+background-color: rgb(143, 143, 143);
+
+border:2px solid #000;
+
+}
+
+QPushButton {
+
+color: #fff !important;
+
+text-transform: uppercase;
+
+text-decoration: none;
+
+background: #e12d4e;
+
+padding: 20px;
+
+border-radius: 5px;
+
+display: inline-block;
+
+border: none;
+
+transition: all 0.4s ease 0s;
+
+}
+
+QPushButton:hover {
+
+background: #434343;
+
+letter-spacing: 1px;
+
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+
+transition: all 0.4s ease 0s;
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>statistiques</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_25">
+        <attribute name="title">
+         <string>valider station</string>
+        </attribute>
+        <widget class="QGroupBox" name="groupBox_18">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>0</y>
+           <width>541</width>
+           <height>401</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>valider station</string>
+         </property>
+         <widget class="QLabel" name="label_23">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>191</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>elements presents dans la station:</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="camera_ck">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>70</y>
+            <width>70</width>
+            <height>18</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>camera</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="chaises_ck">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>110</y>
+            <width>70</width>
+            <height>18</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>chaises</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="tickets_ck">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>150</y>
+            <width>70</width>
+            <height>18</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>tickets</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="planning_ck">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>190</y>
+            <width>70</width>
+            <height>18</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>planning</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="presence_ck">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>230</y>
+            <width>101</width>
+            <height>18</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>presence agent</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pb_valider">
+          <property name="geometry">
+           <rect>
+            <x>304</x>
+            <y>150</y>
+            <width>101</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+
+padding: 1px;
+
+border-style: solid;
+
+border: 2px solid gray;
+
+border-radius: 8px;
+
+background-color: rgb(143, 143, 143);
+
+border:2px solid #000;
+
+}
+
+QPushButton {
+
+color: #fff !important;
+
+text-transform: uppercase;
+
+text-decoration: none;
+
+background: #e12d4e;
+
+padding: 20px;
+
+border-radius: 5px;
+
+display: inline-block;
+
+border: none;
+
+transition: all 0.4s ease 0s;
+
+}
+
+QPushButton:hover {
+
+background: #434343;
+
+letter-spacing: 1px;
+
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+
+transition: all 0.4s ease 0s;
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Valider</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_26">
+        <attribute name="title">
+         <string>localiser station</string>
+        </attribute>
+        <widget class="QGroupBox" name="groupBox_20">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>20</y>
+           <width>861</width>
+           <height>511</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>localiser station</string>
+         </property>
+         <widget class="QGroupBox" name="groupBox_24">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>30</y>
+            <width>151</width>
+            <height>221</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>entrer num station</string>
+          </property>
+          <widget class="QLineEdit" name="lineEdit_34">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>113</width>
+             <height>22</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_29">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>50</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+
+padding: 1px;
+
+border-style: solid;
+
+border: 2px solid gray;
+
+border-radius: 8px;
+
+background-color: rgb(143, 143, 143);
+
+border:2px solid #000;
+
+}
+
+QPushButton {
+
+color: #fff !important;
+
+text-transform: uppercase;
+
+text-decoration: none;
+
+background: #e12d4e;
+
+padding: 20px;
+
+border-radius: 5px;
+
+display: inline-block;
+
+border: none;
+
+transition: all 0.4s ease 0s;
+
+}
+
+QPushButton:hover {
+
+background: #434343;
+
+letter-spacing: 1px;
+
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+
+transition: all 0.4s ease 0s;
+
+}</string>
+           </property>
+           <property name="text">
+            <string>acceder</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_28">
+        <attribute name="title">
+         <string>superviser </string>
+        </attribute>
+        <widget class="QGroupBox" name="groupBox_19">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>0</y>
+           <width>631</width>
+           <height>401</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>superviser le planning</string>
+         </property>
+         <widget class="QPushButton" name="pushButton">
+          <property name="geometry">
+           <rect>
+            <x>240</x>
+            <y>130</y>
+            <width>151</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+
+padding: 1px;
+
+border-style: solid;
+
+border: 2px solid gray;
+
+border-radius: 8px;
+
+background-color: rgb(143, 143, 143);
+
+border:2px solid #000;
+
+}
+
+QPushButton {
+
+color: #fff !important;
+
+text-transform: uppercase;
+
+text-decoration: none;
+
+background: #e12d4e;
+
+padding: 20px;
+
+border-radius: 5px;
+
+display: inline-block;
+
+border: none;
+
+transition: all 0.4s ease 0s;
+
+}
+
+QPushButton:hover {
+
+background: #434343;
+
+letter-spacing: 1px;
+
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+
+transition: all 0.4s ease 0s;
+
+}</string>
+          </property>
+          <property name="text">
+           <string>Excel</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

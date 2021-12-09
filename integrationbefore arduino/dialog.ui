@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>973</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>961</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="acceuil">
+    <attribute name="title">
+     <string>acceuil</string>
+    </attribute>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>80</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>identifiant</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>150</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>mot de passe </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>80</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>160</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>250</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>connecter</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>250</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>annuler</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>10</y>
+       <width>921</width>
+       <height>451</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../Downloads/logobus.png</pixmap>
+     </property>
+    </widget>
+    <zorder>label_2</zorder>
+    <zorder>label_4</zorder>
+    <zorder>label_5</zorder>
+    <zorder>lineEdit</zorder>
+    <zorder>lineEdit_2</zorder>
+    <zorder>pushButton</zorder>
+    <zorder>pushButton_2</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>gestion des Bus</string>
+    </attribute>
+    <widget class="QTabWidget" name="tabWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>941</width>
+       <height>471</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>8</number>
+     </property>
+     <widget class="QWidget" name="tab_5">
+      <attribute name="title">
+       <string>ajouter Bus </string>
+      </attribute>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>120</y>
+         <width>161</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>plaque du Bus </string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_id">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>70</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_plaque">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>130</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_ligne">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>190</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>70</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>ID bus</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_capacite">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>250</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_ajouter">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>330</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ajouter</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>240</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>capacité</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>180</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>ligne</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>-30</x>
+         <y>-20</y>
+         <width>1201</width>
+         <height>551</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/bac.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_7</zorder>
+      <zorder>label_6</zorder>
+      <zorder>le_id</zorder>
+      <zorder>le_plaque</zorder>
+      <zorder>le_ligne</zorder>
+      <zorder>label_10</zorder>
+      <zorder>le_capacite</zorder>
+      <zorder>pb_ajouter</zorder>
+      <zorder>label_11</zorder>
+      <zorder>label</zorder>
+     </widget>
+     <widget class="QWidget" name="tab_6">
+      <attribute name="title">
+       <string>afficher Bus</string>
+      </attribute>
+      <widget class="QTableView" name="tab_bus">
+       <property name="geometry">
+        <rect>
+         <x>45</x>
+         <y>50</y>
+         <width>681</width>
+         <height>351</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>-25</x>
+         <y>-25</y>
+         <width>1031</width>
+         <height>521</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/bac.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_afficher">
+       <property name="geometry">
+        <rect>
+         <x>760</x>
+         <y>100</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">selection-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+       </property>
+       <property name="text">
+        <string>afficher</string>
+       </property>
+      </widget>
+      <zorder>label_8</zorder>
+      <zorder>tab_bus</zorder>
+      <zorder>pb_afficher</zorder>
+     </widget>
+     <widget class="QWidget" name="tab_7">
+      <attribute name="title">
+       <string>modifier Bus</string>
+      </attribute>
+      <widget class="QLabel" name="label_23">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>150</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>plaque du Bus </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_26">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>200</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>ligne</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_27">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>80</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>ID bus </string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_IDmodifier">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>90</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_plaqueModifier">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>150</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_ligneModifier">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>210</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_capModifier">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>270</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_modifier">
+       <property name="geometry">
+        <rect>
+         <x>660</x>
+         <y>300</y>
+         <width>181</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Modifier </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>240</y>
+         <width>191</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string>capacité</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>-50</x>
+         <y>-10</y>
+         <width>1131</width>
+         <height>511</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/bac.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_9</zorder>
+      <zorder>label_23</zorder>
+      <zorder>label_26</zorder>
+      <zorder>label_27</zorder>
+      <zorder>le_IDmodifier</zorder>
+      <zorder>le_plaqueModifier</zorder>
+      <zorder>le_ligneModifier</zorder>
+      <zorder>le_capModifier</zorder>
+      <zorder>pb_modifier</zorder>
+      <zorder>label_22</zorder>
+     </widget>
+     <widget class="QWidget" name="tab_8">
+      <attribute name="title">
+       <string>supprimer Bus </string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>931</width>
+         <height>431</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>saisir Bus </string>
+       </property>
+       <widget class="QLabel" name="label_40">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>90</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>N° du Bus</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_41">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>130</y>
+          <width>161</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>plaque du Bus </string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_nBS">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>90</y>
+          <width>271</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_pbS">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>140</y>
+          <width>271</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_supprimer">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>230</y>
+          <width>151</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>supprimer</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>1131</width>
+          <height>441</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../../Downloads/bac.png</pixmap>
+        </property>
+       </widget>
+       <zorder>label_12</zorder>
+       <zorder>label_40</zorder>
+       <zorder>label_41</zorder>
+       <zorder>le_nBS</zorder>
+       <zorder>le_pbS</zorder>
+       <zorder>pb_supprimer</zorder>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_9">
+      <attribute name="title">
+       <string>horaire Bus</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>911</width>
+         <height>421</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>saisir Bus</string>
+       </property>
+       <widget class="QLineEdit" name="le_nBHoraire">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>30</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>30</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>N° Bus</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>20</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>plaque du Bus </string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_pBHoraire">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>30</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_AccFexel">
+        <property name="geometry">
+         <rect>
+          <x>770</x>
+          <y>20</y>
+          <width>121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>acceder</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="fichierEXCEL">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>881</width>
+          <height>321</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>-60</y>
+         <width>1091</width>
+         <height>551</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/bac.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_16</zorder>
+      <zorder>groupBox_4</zorder>
+     </widget>
+     <widget class="QWidget" name="tab_10">
+      <attribute name="title">
+       <string>rechercher Bus </string>
+      </attribute>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>200</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="recherche">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>931</width>
+         <height>451</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>saisir Bus </string>
+       </property>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>ligne </string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_ligneR">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>40</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_recherche">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>40</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>rechercher</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="tab_recherche">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>110</y>
+          <width>871</width>
+          <height>301</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_trier">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>40</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>N° Bus  </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>-60</x>
+          <y>-90</y>
+          <width>1201</width>
+          <height>541</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../../Downloads/bac.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_trierP">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>40</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PlaqueB</string>
+        </property>
+       </widget>
+       <zorder>label_13</zorder>
+       <zorder>label_21</zorder>
+       <zorder>le_ligneR</zorder>
+       <zorder>pb_recherche</zorder>
+       <zorder>tab_recherche</zorder>
+       <zorder>pb_trier</zorder>
+       <zorder>pb_trierP</zorder>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_11">
+      <attribute name="title">
+       <string>afficher trajet</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>911</width>
+         <height>421</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>saisir Bus </string>
+       </property>
+       <widget class="QLabel" name="label_29">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>131</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+
+</string>
+        </property>
+        <property name="text">
+         <string>ligne de Bus</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_30">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>chemin</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="l_ligneA">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>30</y>
+          <width>201</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_afficherTr">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>160</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>afficher</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_imp">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>370</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Imprimer</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_chemin">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>80</y>
+          <width>201</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>60</y>
+         <width>421</width>
+         <height>271</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>-20</x>
+         <y>-20</y>
+         <width>991</width>
+         <height>511</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/bac.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="photoTrajet">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>30</y>
+         <width>551</width>
+         <height>311</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <zorder>label_14</zorder>
+      <zorder>groupBox_6</zorder>
+      <zorder>label_3</zorder>
+      <zorder>photoTrajet</zorder>
+     </widget>
+     <widget class="QWidget" name="tab_12">
+      <attribute name="title">
+       <string>passer reclamation</string>
+      </attribute>
+      <widget class="QLabel" name="label_31">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>60</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_mdp">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>140</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px; border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color: rgb(255, 255, 255);
+
+background-color: rgb(65, 66, 71);</string>
+       </property>
+       <property name="text">
+        <string>123esprit*</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_nom_2">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>100</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px; border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color: rgb(255, 255, 255);
+
+background-color: rgb(65, 66, 71);</string>
+       </property>
+       <property name="text">
+        <string>2a21groupe5@gmail.com</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_objet">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>220</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px; border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color: rgb(255, 255, 255);
+
+background-color: rgb(65, 66, 71);</string>
+       </property>
+       <property name="text">
+        <string>objet</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_recla">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>260</y>
+         <width>471</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px; border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color: rgb(255, 255, 255);
+
+background-color: rgb(65, 66, 71);</string>
+       </property>
+       <property name="text">
+        <string>reclamation</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="sendBtn">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>370</y>
+         <width>131</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>passer</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>-30</y>
+         <width>1181</width>
+         <height>501</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/bac.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_smtp">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px; border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color: rgb(255, 255, 255);
+
+background-color: rgb(65, 66, 71);</string>
+       </property>
+       <property name="text">
+        <string>smtp.gmail.com</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_465">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>60</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px; border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color: rgb(255, 255, 255);
+
+background-color: rgb(65, 66, 71);</string>
+       </property>
+       <property name="text">
+        <string>465</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_receveur">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>180</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px; border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color: rgb(255, 255, 255);
+
+background-color: rgb(65, 66, 71);</string>
+       </property>
+       <property name="text">
+        <string>receveur</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="exitBtn">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>370</y>
+         <width>131</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>retour</string>
+       </property>
+      </widget>
+      <zorder>label_15</zorder>
+      <zorder>label_31</zorder>
+      <zorder>le_mdp</zorder>
+      <zorder>le_nom_2</zorder>
+      <zorder>le_objet</zorder>
+      <zorder>le_recla</zorder>
+      <zorder>sendBtn</zorder>
+      <zorder>lineEdit_smtp</zorder>
+      <zorder>lineEdit_465</zorder>
+      <zorder>le_receveur</zorder>
+      <zorder>exitBtn</zorder>
+     </widget>
+     <widget class="QWidget" name="tab_13">
+      <attribute name="title">
+       <string>Etat du Bus</string>
+      </attribute>
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>-15</x>
+         <y>-35</y>
+         <width>1151</width>
+         <height>551</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/bac.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>891</width>
+         <height>391</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>vignette</string>
+        </attribute>
+        <widget class="QLabel" name="label_17">
+         <property name="geometry">
+          <rect>
+           <x>-40</x>
+           <y>-110</y>
+           <width>1251</width>
+           <height>551</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../../Downloads/bac.png</pixmap>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_3">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>30</y>
+           <width>113</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_4">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>90</y>
+           <width>113</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_28">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>81</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>N° Bus</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_32">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>plaque bus </string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_33">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>150</y>
+           <width>141</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>validite du </string>
+         </property>
+        </widget>
+        <widget class="QDateEdit" name="dateEdit">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>160</y>
+           <width>110</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_34">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>160</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>au</string>
+         </property>
+        </widget>
+        <widget class="QDateEdit" name="dateEdit_2">
+         <property name="geometry">
+          <rect>
+           <x>270</x>
+           <y>160</y>
+           <width>110</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>assurance</string>
+        </attribute>
+        <widget class="QLabel" name="label_25">
+         <property name="geometry">
+          <rect>
+           <x>-90</x>
+           <y>-120</y>
+           <width>1521</width>
+           <height>561</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../../Downloads/bac.png</pixmap>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_35">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>50</y>
+           <width>81</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>N° Bus</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_36">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>110</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>plaque bus </string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_37">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>180</y>
+           <width>141</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>validite du </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_5">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>50</y>
+           <width>113</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_6">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>110</y>
+           <width>113</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QDateEdit" name="dateEdit_3">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>190</y>
+           <width>110</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QDateEdit" name="dateEdit_4">
+         <property name="geometry">
+          <rect>
+           <x>370</x>
+           <y>190</y>
+           <width>110</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_38">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>190</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>au</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
