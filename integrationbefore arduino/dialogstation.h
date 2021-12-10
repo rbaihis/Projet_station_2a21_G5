@@ -15,7 +15,7 @@ public:
     explicit DialogStation(QWidget *parent = nullptr);
     ~DialogStation();
 private slots:
-    void on_pushButton_3_clicked();
+
 
     void on_pb_ajouter_clicked();
 
@@ -25,7 +25,7 @@ private slots:
 
     void on_pb_modifier_clicked();
 
-    void on_lineEdit_recherhche_2_textChanged(const QString &arg1);
+   // void on_lineEdit_recherhche_2_textChanged(const QString &arg1);
 
     void on_pushButton_32_clicked();
 
@@ -35,13 +35,7 @@ private slots:
 
     void on_pb_valider_clicked();
 
-    void on_tabWidget_9_currentChanged(int index);
-
-
-
-    void on_pb_recherche_2_clicked();
-
-    void on_pb_recherche_clicked();
+void on_pb_recherche_clicked();
 
 private:
     Ui::DialogStation *ui;
