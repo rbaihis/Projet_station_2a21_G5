@@ -176,4 +176,16 @@ void Bus::writeExel()
 }
 
 
+QSqlQueryModel * Bus::rechercherID(QString R)
+{
 
+    QSqlQueryModel * model= new QSqlQueryModel();
+    model->setQuery("SELECT * FROM bus  WHERE id_bus=  '"+R+"'  ");
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("id_bus"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("num_plaque"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("capacite"));
+    model->setHeaderData(3, Qt::Horizontal, QObject::tr("ligne"));
+    return model ;
+
+
+}

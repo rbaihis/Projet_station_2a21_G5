@@ -41,7 +41,7 @@ public:
     bool passerRecla();
     void writeExel();
       QSqlQueryModel *trierP();
-
+    QSqlQueryModel * rechercherID(QString);
 
 
 

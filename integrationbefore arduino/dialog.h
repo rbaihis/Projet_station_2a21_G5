@@ -44,6 +44,8 @@ private slots:
 
         void on_pb_trierP_clicked();
 
+        void on_pb_rechercheID_clicked();
+
 private:
     Ui::Dialog *ui;
     Bus b;
