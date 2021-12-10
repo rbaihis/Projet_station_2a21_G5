@@ -129,7 +129,7 @@ dialog=new DialogREC(this);
 dialog->show();
 }
 
-void DialogReclamation::on_Trier_currentChanged(int index)
+void DialogReclamation::on_Trier_currentChanged()
 {
     ui->tab_reclamation->setModel(R.afficher());
     ui->rh_table->setModel(R.afficher_rh());

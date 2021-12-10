@@ -63,7 +63,3 @@ DialogSTAD::~DialogSTAD()
    return list;
  }
 
-void DialogSTAD::on_Frame_customContextMenuRequested(const QPoint &pos)
-{
-
-}

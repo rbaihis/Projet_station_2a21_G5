@@ -30,7 +30,7 @@ private slots:
 
     void on_pb_stat_age_clicked();
 
-    void on_le_recherche_client_textChanged(const QString &arg1);
+    void on_le_recherche_client_textChanged();
 
     void on_cb_tri_client_currentIndexChanged(int index);
 

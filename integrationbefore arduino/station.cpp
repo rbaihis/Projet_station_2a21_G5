@@ -144,6 +144,7 @@ bool station::EXCEL()
     fichier.close();
 
     }
+      return true;
 }
 QSqlQueryModel  * station::recherche(QString rech)
 {

@@ -18,7 +18,7 @@ QRWidget::QRWidget(QWidget *parent) :
     update();
 }
 */
-void QRWidget::paintEvent(QPaintEvent *pe){
+void QRWidget::paintEvent(){
     qDebug() <<"hewo";
 
     QPainter painter(this);

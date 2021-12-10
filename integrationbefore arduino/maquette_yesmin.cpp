@@ -130,7 +130,7 @@ void maquette_yesmin::on_pb_stat_clicked()
 dialog.exec();
 }
 
-void maquette_yesmin::on_Trier_currentChanged(int index)
+void maquette_yesmin::on_Trier_currentChanged()
 {
     ui->tab_reclamation->setModel(R.afficher());
     ui->rh_table->setModel(R.afficher_rh());

@@ -13,7 +13,7 @@ public:
     QSize* sz = new QSize(220,220);
     QColor* fg = new QColor(0,0,0);
 protected:
-    void paintEvent(QPaintEvent *);
+    void paintEvent();
 };
 
 #endif // QRWIDGET_H

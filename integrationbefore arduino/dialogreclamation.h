@@ -31,7 +31,7 @@ private slots:
 
     void on_pb_stat_clicked();
 
-    void on_Trier_currentChanged(int index);
+    void on_Trier_currentChanged();
 
    // void on_pb_arduino_clicked();
 

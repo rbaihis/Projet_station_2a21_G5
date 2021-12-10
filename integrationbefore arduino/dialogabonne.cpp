@@ -286,7 +286,7 @@ void Dialogabonne::on_pb_stat_age_clicked()
 
 }
 
-void Dialogabonne::on_le_recherche_client_textChanged(const QString &arg1)
+void Dialogabonne::on_le_recherche_client_textChanged()
 {
     if(ui->le_recherche_client->text()!="")
                     {

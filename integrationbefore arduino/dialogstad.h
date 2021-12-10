@@ -16,7 +16,7 @@ public:
     ~DialogSTAD();
 
 private slots:
-    void on_Frame_customContextMenuRequested(const QPoint &pos);
+
 
 private:
     Ui::DialogSTAD *ui;

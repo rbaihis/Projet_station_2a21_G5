@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>838</width>
-    <height>542</height>
+    <width>1173</width>
+    <height>573</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,9 +17,9 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>20</y>
-     <width>711</width>
-     <height>471</height>
+     <y>40</y>
+     <width>961</width>
+     <height>511</height>
     </rect>
    </property>
    <property name="currentIndex">
@@ -547,8 +547,8 @@ color: rgb(84, 105, 127);</string>
       <rect>
        <x>20</x>
        <y>10</y>
-       <width>691</width>
-       <height>431</height>
+       <width>891</width>
+       <height>461</height>
       </rect>
      </property>
      <property name="title">
@@ -781,7 +781,7 @@ color: rgb(84, 105, 127);</string>
        <rect>
         <x>20</x>
         <y>410</y>
-        <width>651</width>
+        <width>661</width>
         <height>16</height>
        </rect>
       </property>
@@ -794,7 +794,7 @@ color: rgb(84, 105, 127);</string>
        <rect>
         <x>660</x>
         <y>30</y>
-        <width>20</width>
+        <width>41</width>
         <height>391</height>
        </rect>
       </property>
@@ -807,7 +807,7 @@ color: rgb(84, 105, 127);</string>
        <rect>
         <x>470</x>
         <y>15</y>
-        <width>201</width>
+        <width>211</width>
         <height>31</height>
        </rect>
       </property>
@@ -821,7 +821,7 @@ color: rgb(84, 105, 127);</string>
         <x>260</x>
         <y>20</y>
         <width>191</width>
-        <height>16</height>
+        <height>31</height>
        </rect>
       </property>
       <property name="styleSheet">
