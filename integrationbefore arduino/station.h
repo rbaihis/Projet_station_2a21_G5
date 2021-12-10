@@ -42,5 +42,6 @@ bool supprimer(int);
     QSqlQueryModel * trides();
     QSqlQueryModel * triasc();
     QSqlQueryModel* tri(QString,QString);
+     QSqlQueryModel * recherche(QString rech);
 };
 #endif // STATION_H

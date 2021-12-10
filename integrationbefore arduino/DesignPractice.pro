@@ -49,6 +49,7 @@ SOURCES += \
     station.cpp
 
 HEADERS += \
+    arduino.h \
     dbconnexion.h \
     employee.h \
     MainWindowseif.h \
@@ -74,6 +75,7 @@ HEADERS += \
 
 FORMS += \
     MainWindowseif.ui \
+    arduinomaq.ui \
     dialog.ui \
     dialogabonne.ui \
     dialogrec.ui \

@@ -16,8 +16,8 @@
   <widget class="QTabWidget" name="tabWidget_3">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>10</y>
+     <x>0</x>
+     <y>0</y>
      <width>1001</width>
      <height>671</height>
     </rect>
@@ -38,9 +38,9 @@
     <widget class="QTabWidget" name="tabWidget_5">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>0</x>
        <y>0</y>
-       <width>771</width>
+       <width>731</width>
        <height>581</height>
       </rect>
      </property>
@@ -48,7 +48,7 @@
       <string notr="true">background-image: url(:/img/pngtree-bus-stop-city-png-image_677426.jpg);</string>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tab_16">
       <attribute name="title">
@@ -67,7 +67,7 @@
         <string notr="true"/>
        </property>
        <property name="currentIndex">
-        <number>0</number>
+        <number>2</number>
        </property>
        <widget class="QWidget" name="tab_20">
         <attribute name="title">
@@ -76,8 +76,8 @@
         <widget class="QGroupBox" name="groupBox_6">
          <property name="geometry">
           <rect>
-           <x>20</x>
-           <y>30</y>
+           <x>40</x>
+           <y>10</y>
            <width>531</width>
            <height>331</height>
           </rect>
@@ -166,7 +166,7 @@
          <widget class="QLineEdit" name="le_ville">
           <property name="geometry">
            <rect>
-            <x>150</x>
+            <x>160</x>
             <y>130</y>
             <width>191</width>
             <height>22</height>
@@ -594,10 +594,10 @@ transition: all 0.4s ease 0s;
         <widget class="QGroupBox" name="groupBox_13">
          <property name="geometry">
           <rect>
-           <x>30</x>
-           <y>20</y>
+           <x>20</x>
+           <y>10</y>
            <width>221</width>
-           <height>231</height>
+           <height>161</height>
           </rect>
          </property>
          <property name="styleSheet">
@@ -609,8 +609,8 @@ transition: all 0.4s ease 0s;
          <widget class="QPushButton" name="pb_supprimer">
           <property name="geometry">
            <rect>
-            <x>60</x>
-            <y>150</y>
+            <x>50</x>
+            <y>80</y>
             <width>141</width>
             <height>51</height>
            </rect>
@@ -690,8 +690,8 @@ transition: all 0.4s ease 0s;
          <widget class="QLineEdit" name="numero_del">
           <property name="geometry">
            <rect>
-            <x>60</x>
-            <y>50</y>
+            <x>70</x>
+            <y>40</y>
             <width>113</width>
             <height>20</height>
            </rect>
@@ -721,7 +721,7 @@ transition: all 0.4s ease 0s;
         <string notr="true"/>
        </property>
        <property name="currentIndex">
-        <number>0</number>
+        <number>2</number>
        </property>
        <widget class="QWidget" name="tab_23">
         <attribute name="title">
@@ -739,13 +739,13 @@ transition: all 0.4s ease 0s;
          <property name="title">
           <string>entrer num station</string>
          </property>
-         <widget class="QTableView" name="tableViewja_2">
+         <widget class="QTableView" name="tableView_rech">
           <property name="geometry">
            <rect>
-            <x>30</x>
-            <y>20</y>
-            <width>511</width>
-            <height>141</height>
+            <x>40</x>
+            <y>30</y>
+            <width>561</width>
+            <height>241</height>
            </rect>
           </property>
          </widget>
@@ -760,42 +760,17 @@ transition: all 0.4s ease 0s;
           </rect>
          </property>
         </widget>
-        <widget class="QComboBox" name="cobo_crit_2">
+        <widget class="QPushButton" name="pb_recherche">
          <property name="geometry">
           <rect>
-           <x>351</x>
+           <x>360</x>
            <y>320</y>
-           <width>81</width>
-           <height>22</height>
-          </rect>
-         </property>
-         <item>
-          <property name="text">
-           <string>numero</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>id_agent</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>ville</string>
-          </property>
-         </item>
-        </widget>
-        <widget class="QLabel" name="label_6">
-         <property name="geometry">
-          <rect>
-           <x>130</x>
-           <y>320</y>
-           <width>71</width>
-           <height>16</height>
+           <width>75</width>
+           <height>23</height>
           </rect>
          </property>
          <property name="text">
-          <string>RECHERCHER</string>
+          <string>Rechercher</string>
          </property>
         </widget>
        </widget>
@@ -1207,112 +1182,8 @@ transition: all 0.4s ease 0s;
        </widget>
        <widget class="QWidget" name="tab_26">
         <attribute name="title">
-         <string>localiser station</string>
+         <string/>
         </attribute>
-        <widget class="QGroupBox" name="groupBox_20">
-         <property name="geometry">
-          <rect>
-           <x>30</x>
-           <y>20</y>
-           <width>861</width>
-           <height>511</height>
-          </rect>
-         </property>
-         <property name="title">
-          <string>localiser station</string>
-         </property>
-         <widget class="QGroupBox" name="groupBox_24">
-          <property name="geometry">
-           <rect>
-            <x>30</x>
-            <y>30</y>
-            <width>151</width>
-            <height>221</height>
-           </rect>
-          </property>
-          <property name="title">
-           <string>entrer num station</string>
-          </property>
-          <widget class="QLineEdit" name="lineEdit_34">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>20</y>
-             <width>113</width>
-             <height>22</height>
-            </rect>
-           </property>
-          </widget>
-          <widget class="QPushButton" name="pushButton_29">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>50</y>
-             <width>93</width>
-             <height>28</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-
-padding: 1px;
-
-border-style: solid;
-
-border: 2px solid gray;
-
-border-radius: 8px;
-
-background-color: rgb(143, 143, 143);
-
-border:2px solid #000;
-
-}
-
-QPushButton {
-
-color: #fff !important;
-
-text-transform: uppercase;
-
-text-decoration: none;
-
-background: #e12d4e;
-
-padding: 20px;
-
-border-radius: 5px;
-
-display: inline-block;
-
-border: none;
-
-transition: all 0.4s ease 0s;
-
-}
-
-QPushButton:hover {
-
-background: #434343;
-
-letter-spacing: 1px;
-
--webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-
--moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-
-box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
-
-transition: all 0.4s ease 0s;
-
-}</string>
-           </property>
-           <property name="text">
-            <string>acceder</string>
-           </property>
-          </widget>
-         </widget>
-        </widget>
        </widget>
        <widget class="QWidget" name="tab_28">
         <attribute name="title">
@@ -1334,7 +1205,7 @@ transition: all 0.4s ease 0s;
           <property name="geometry">
            <rect>
             <x>240</x>
-            <y>130</y>
+            <y>170</y>
             <width>151</width>
             <height>51</height>
            </rect>

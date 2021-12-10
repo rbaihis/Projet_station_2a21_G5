@@ -15,6 +15,9 @@ public:
     explicit DialogSTAD(QWidget *parent = nullptr);
     ~DialogSTAD();
 
+private slots:
+    void on_Frame_customContextMenuRequested(const QPoint &pos);
+
 private:
     Ui::DialogSTAD *ui;
     QList<qreal> stat_station();

@@ -26,15 +26,13 @@ bool station::ajouter()
 
     QString res = QString::number(numero);
 
-    query.prepare(" insert into station(identifiant,nom,numero,ville,region) values (:identifiant,:nom,:numero,:ville,:region)");
+    query.prepare("insert into station(nom,numero,ville,region,id_agent)" "values(:nom,:numero,:ville,:region,:identifiant)");
    //creation des variables liées
-    query.bindValue(":identifiant",identifiant);
      query.bindValue(":nom",nom);
-     query.bindValue(":numero",res);
+     query.bindValue(":numero",numero);
      query.bindValue(":ville",ville);
      query.bindValue(":region",region);
-
-
+     query.bindValue(":identifiant",identifiant);
      return query.exec();
  }
 
@@ -74,25 +72,23 @@ QSqlQueryModel * station:: afficher()
 bool station::modifier()
 {
 
-QSqlQuery query;
+    QSqlQuery query;
+
+        query.prepare("update station set  nom=?,id_agent=?, ville=?, region=?,ticket = ?, camera=? where numero=?");
+        //query.prepare("update station set (id_agent, ville, region) where (numero) " "VALUES (?, ?, ?, ?)");
+        query.addBindValue(nom);
+        query.addBindValue(identifiant);
+        query.addBindValue(ville);
+        query.addBindValue(region);
+        query.addBindValue(0);
+        query.addBindValue(0);
+        query.addBindValue(0);
+        query.addBindValue(numero);
 
 
+    //qDebug() << nom << identifiant << ville << region << numero ;
 
-    query.prepare("update station set  nom=?,identifiant=?, ville=?, region=?,ticket = ?, camera=? where numero=?");
-    //query.prepare("update station set (identifiant, ville, region) where (numero) " "VALUES (?, ?, ?, ?)");
-    query.addBindValue(nom);
-    query.addBindValue(identifiant);
-    query.addBindValue(ville);
-    query.addBindValue(region);
-    query.addBindValue(0);
-    query.addBindValue(0);
-    query.addBindValue(0);
-    query.addBindValue(numero);
-
-
-//qDebug() << nom << identifiant << ville << region << numero ;
-
-return    query.exec();
+    return    query.exec();
 }
 QSqlQueryModel * station::triasc()
 {
@@ -148,4 +144,11 @@ bool station::EXCEL()
     fichier.close();
 
     }
+}
+QSqlQueryModel  * station::recherche(QString rech)
+{
+
+    QSqlQueryModel * model= new QSqlQueryModel();
+    model->setQuery("select * from station   where nom Like '%"+rech+"%' OR ville Like '%"+rech+"%' OR numero Like '%"+rech+"%'");
+    return    model;
 }

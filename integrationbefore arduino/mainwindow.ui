@@ -152,8 +152,8 @@ font: 75 italic 40pt &quot;Century Schoolbook&quot;;
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>320</x>
-       <y>0</y>
+       <x>280</x>
+       <y>-10</y>
        <width>701</width>
        <height>471</height>
       </rect>

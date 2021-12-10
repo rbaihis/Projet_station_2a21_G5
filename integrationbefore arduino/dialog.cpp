@@ -232,3 +232,11 @@ void Dialog::on_pb_trierP_clicked()
     ui->tab_recherche->setModel(b.trierP());
 
 }
+
+
+
+void Dialog::on_pb_rechercheID_clicked()
+{
+    QString id=ui->le_idR->text();
+     ui->tab_recherche->setModel(b.rechercherID(id));
+}

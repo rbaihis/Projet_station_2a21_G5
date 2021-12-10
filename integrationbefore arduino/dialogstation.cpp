@@ -7,6 +7,8 @@
 #include <QtDebug>
 #include <QFile>
 #include"dialogstad.h"
+
+
 DialogStation::DialogStation(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::DialogStation)
@@ -23,6 +25,7 @@ DialogStation::~DialogStation()
 
 void DialogStation::on_pb_ajouter_clicked()
 {
+
     QString nom=ui->nom_station->text();
     QString ville=ui->le_ville->text();
     QString region=ui->le_region->text();
@@ -32,6 +35,9 @@ void DialogStation::on_pb_ajouter_clicked()
     bool test=s.ajouter();
     if (test)
     { QMessageBox::information(this ,"ajout","ajout avec succée");}
+
+
+
 
 }
 
@@ -86,37 +92,6 @@ void MainWindow::on_pb_modifier_clicked()
 }
 */
 
-void DialogStation::on_lineEdit_recherhche_2_textChanged(const QString &arg1)
-{station a;
-    QSqlQueryModel *model= new QSqlQueryModel();
-            QSqlQuery   *query= new QSqlQuery();
-    if(ui->cobo_crit_2->currentText()=="numero"
-            ){
-        query->prepare("SELECT * FROM station WHERE numero LIKE'"+arg1+"%'");//
-query->exec();
-    model->setQuery(*query);
-     // ui->tablestation->setModel(a.afficher());
- ui->tableViewja_2->setModel(model);
-}
-
-    else {
-        if(ui->cobo_crit_2->currentText()=="id_agent"){
-            query->prepare("SELECT * FROM station WHERE id_agent LIKE'"+arg1+"%'");//+tri
-    query->exec();
-        model->setQuery(*query);
-   ui->tableViewja_2->setModel(model);
-        }
-        else{
-            if(ui->cobo_crit_2->currentText()=="ville")
-                query->prepare("SELECT * FROM station WHERE ville LIKE'"+arg1+"%'");//+tri
-        query->exec();
-            model->setQuery(*query);
-        ui->tableViewja_2->setModel(model);
-            }
-
-        }
-}
-
 
 
 
@@ -137,9 +112,9 @@ void DialogStation::on_pushButton_clicked()
 }
 
 void DialogStation::on_pushButton_28_clicked()
-{  DialogSTAD *dialogSTAD;
-    dialogSTAD=new DialogSTAD(this);
-    dialogSTAD->show();
+{  DialogSTAD *dialog;
+    dialog=new DialogSTAD(this);
+    dialog->show();
 
 }
 
@@ -150,8 +125,7 @@ void DialogStation::on_pb_valider_clicked()
     &&(ui->planning_ck->checkState())
     &&(ui->presence_ck->checkState())
 
-    ){ QMessageBox::information(nullptr, QObject::tr("Station validee"),
-                                QObject::tr("Station validée.\n"
+    ){ QMessageBox::information(nullptr, QObject::tr("Station validee"),QObject::tr("Station validée.\n"
                                             "Click Cancel to exit."), QMessageBox::Cancel);
 
 
@@ -171,3 +145,13 @@ void MainWindow::on_tabWidget_9_currentChanged(int index)
 {
 
 }*/
+
+void DialogStation::on_pb_recherche_clicked()
+{
+        QString rech = ui->lineEdit_recherhche_2->text();
+      station a;
+        QSqlQueryModel * model=a.recherche(rech);
+        ui->tableView_rech->setModel(model);
+}
+
+

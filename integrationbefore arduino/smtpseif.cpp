@@ -241,7 +241,6 @@ void Smtpseif::readyRead()
         state = Close;
         emit status( tr( "Message sent" ) );
 
-
     }
     else if ( state == Close )
     {
