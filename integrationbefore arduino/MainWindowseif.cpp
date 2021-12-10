@@ -14,25 +14,23 @@
 #include<QPieSeries>
 #include<QPieSlice>
 
-
-
-
+//yessmin
+#include <QApplication>
+#include "maquette_yesmin.h"
+#include <QTranslator>
+#include <QInputDialog>
 
 MainWindowseif::MainWindowseif(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindowseif)
 {
 
-
-
-
     currentuser="";
     ui->setupUi(this);
     // ladel status show only not important at all
 
+
     c.createconnect();
-
-
 
 
     // first time application
@@ -921,7 +919,7 @@ bool MainWindowseif::checking_user_log_in_and_updating_login_status( QString idp
     myquery.prepare("select * from employee where id_cin=:id_cin");
     myquery.bindValue(":id_cin",idpassed);
     qDebug()<<"\nid passed to my quer"<<idpassed;
-myquery.exec();
+    myquery.exec();
 
 
 QString id;
@@ -935,7 +933,7 @@ qDebug()<<"querry select just happened above"<<endl;
     password=myquery.value(3).toString();
 
      }
-            qDebug()<<"\ni am the cureent user no role *"<<role<<"*"<<endl;
+        qDebug()<<"\ni am the cureent user no role *"<<role<<"*"<<endl;
 
         if ( (idpassed==id) && ( passwordpassed==password ) )
          {
@@ -975,10 +973,13 @@ void MainWindowseif::on_pushButton_login_clicked()
 
     bool result=checking_user_log_in_and_updating_login_status(id,pass,role_what);
 
-    role_what= role_what.toLower();
+    role_what = role_what.toLower();
 
     if(result==true && (role_what=="admin") )
     {
+
+        ui->label_wrongLOGINinput->setText( "Enter LOGIN AND PASSWORD" );
+
         ui->stackedWidget_main->setCurrentIndex(1);
         ui->pushButton_logout->show();
         ui->pushButton_FullAccess->show();
@@ -992,6 +993,9 @@ void MainWindowseif::on_pushButton_login_clicked()
          this->hide();
         //salima
          Dialog bus;
+
+             ui->label_wrongLOGINinput->setText( "Enter LOGIN AND PASSWORD" );
+
          bus.exec();
 
          this->show();
@@ -1009,6 +1013,9 @@ void MainWindowseif::on_pushButton_login_clicked()
         this->hide();
         //mohtadi
          Dialogabonne abbonne;
+
+             ui->label_wrongLOGINinput->setText( "Enter LOGIN AND PASSWORD" );
+
          abbonne.setModal(true);
          abbonne.exec();
 
@@ -1022,6 +1029,9 @@ void MainWindowseif::on_pushButton_login_clicked()
         this->hide();
         //ismail
         DialogStation station;
+
+        ui->label_wrongLOGINinput->setText( "Enter LOGIN AND PASSWORD" );
+
         station.setModal(true);
         station.exec();
        this->show();
@@ -1032,19 +1042,47 @@ void MainWindowseif::on_pushButton_login_clicked()
     if(result==true && (role_what=="reclam_agent") )
     {
         this->hide();
+        ui->label_wrongLOGINinput->setText( "Enter LOGIN AND PASSWORD" );
 
 
         //yessmin
-        DialogReclamation reclam;
+
+        QTranslator t;
+        QTranslator guiTranslator;
+        QStringList languages;
+        languages << "English"<<"Frensh";
+        QString lang=QInputDialog::getItem(NULL,"Select Language","Language" , languages);
+        if (lang == "English" )
+        {
+            t.load(":/english2.qm");
+
+           guiTranslator.load("C:/Qt/Qt5.9.9/5.9.9/mingw53_32/translations/qtbase_en.qm");
+        } else if (lang == "Frensh")
+            t.load(":/arabic2.qm");
+        guiTranslator.load("C:/Qt/Qt5.9.9/5.9.9/mingw53_32/translations/qtbase_ar.qm");
+
+        if(lang!="francais")
+               {
+                   QApplication::installTranslator(&t);
+                   QApplication::installTranslator(&guiTranslator);
+               }
+
+        maquette_yesmin reclam;
         reclam.setModal(true);
         reclam.exec();
-
        this->show();
         ui->stackedWidget_main->setCurrentIndex(0);
         ui->pushButton_logout->hide();
+
+
+
     }
-    else if(result==true)
-        ui->label_wrongLOGINinput->setText("you don't have right to access this app \n contact your admin if this is not the case !!");
+    else if(result==true && ( role_what!="reclam_agent" && role_what!="bus_agent" && role_what!="abonn_agent" && role_what!="station_agent" && role_what!="admin" )   )
+        ui->label_wrongLOGINinput->setText("you don't have right to access this app \n !!! contact your admin if this is not the case !!!");
+
+
+
+
 
 }
 

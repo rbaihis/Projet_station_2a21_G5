@@ -37,7 +37,6 @@ public:
     bool modifier();
     void afficherTrajet();
     QSqlQueryModel * rechercher(QString);
-  QSqlQueryModel * rechercherID(QString);
     QSqlQueryModel * trier();
     bool passerRecla();
     void writeExel();

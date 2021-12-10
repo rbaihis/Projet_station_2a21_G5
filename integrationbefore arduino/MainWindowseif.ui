@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1150</width>
-    <height>799</height>
+    <width>1208</width>
+    <height>821</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,8 +20,8 @@
    <widget class="QStackedWidget" name="stackedWidget_main">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>70</y>
+      <x>20</x>
+      <y>60</y>
       <width>1171</width>
       <height>661</height>
      </rect>
@@ -30,7 +30,7 @@
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page_1_of_stacked_widget">
      <widget class="QPushButton" name="pushButton_login">
@@ -2112,37 +2112,11 @@ color:white;
     <widget class="QWidget" name="page_3"/>
     <widget class="QWidget" name="page_4"/>
    </widget>
-   <widget class="QPushButton" name="pushButton_FullAccess">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>20</y>
-      <width>122</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>SUPER USER MODE</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_logout">
-    <property name="geometry">
-     <rect>
-      <x>750</x>
-      <y>20</y>
-      <width>93</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>LogOut</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_main_databaseb_status">
     <property name="geometry">
      <rect>
-      <x>870</x>
-      <y>20</y>
+      <x>960</x>
+      <y>10</y>
       <width>191</width>
       <height>20</height>
      </rect>
@@ -2151,13 +2125,39 @@ color:white;
      <string>[+db connection status]</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_logout">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>10</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LogOut</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_FullAccess">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>122</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SUPER USER MODE</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1150</width>
+     <width>1208</width>
      <height>26</height>
     </rect>
    </property>
@@ -2165,5 +2165,214 @@ color:white;
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>radioButton_age_chercher</sender>
+   <signal>clicked()</signal>
+   <receiver>comboBox_role_compar</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>71</x>
+     <y>504</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>140</x>
+     <y>610</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_role_chercher</sender>
+   <signal>clicked()</signal>
+   <receiver>spinBox_age_or_score_search</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>185</x>
+     <y>508</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>96</x>
+     <y>605</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_score_chercher</sender>
+   <signal>clicked()</signal>
+   <receiver>comboBox_role_compar</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>152</x>
+     <y>509</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>158</x>
+     <y>603</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_score_chercher</sender>
+   <signal>clicked()</signal>
+   <receiver>spinBox_age_or_score_search</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>143</x>
+     <y>513</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>89</x>
+     <y>607</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_role_chercher</sender>
+   <signal>clicked()</signal>
+   <receiver>comboBox_role_compar</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>209</x>
+     <y>512</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>122</x>
+     <y>612</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_age_chercher</sender>
+   <signal>clicked()</signal>
+   <receiver>spinBox_age_or_score_search</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>514</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>80</x>
+     <y>606</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_clear_chercher</sender>
+   <signal>clicked()</signal>
+   <receiver>comboBox_comparison</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>116</x>
+     <y>657</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>96</x>
+     <y>564</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_clear_chercher</sender>
+   <signal>clicked()</signal>
+   <receiver>spinBox_age_or_score_search</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>117</x>
+     <y>659</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>103</x>
+     <y>609</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_clear_chercher</sender>
+   <signal>clicked()</signal>
+   <receiver>comboBox_role_compar</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>134</x>
+     <y>657</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>122</x>
+     <y>607</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_clear_chercher</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_go_chercher</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>176</x>
+     <y>672</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>217</x>
+     <y>596</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_age_chercher</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_go_chercher</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>108</x>
+     <y>513</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>233</x>
+     <y>581</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_role_chercher</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_go_chercher</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>224</x>
+     <y>505</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>221</x>
+     <y>580</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_score_chercher</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_go_chercher</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>139</x>
+     <y>503</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>198</x>
+     <y>565</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

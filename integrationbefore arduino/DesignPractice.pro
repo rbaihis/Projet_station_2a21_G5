@@ -3,8 +3,7 @@ QT       += core gui sql printsupport
 QT       += network
 QT +=multimedia  multimediawidgets
 QT += charts svg
-
-
+QT += serialport
 
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -46,10 +45,11 @@ SOURCES += \
     qrcodegeneratorworker.cpp \
     qrwidget.cpp \
     smtp.cpp \
-    station.cpp
+    station.cpp \
+    maquette_yesmin.cpp
+
 
 HEADERS += \
-    arduino.h \
     dbconnexion.h \
     employee.h \
     MainWindowseif.h \
@@ -71,18 +71,19 @@ HEADERS += \
     rfid.cpp.autosave \
     rfid.h.autosave \
     smtp.h \
-    station.h
+    station.h \
+    maquette_yesmin.h
 
 FORMS += \
     MainWindowseif.ui \
-    arduinomaq.ui \
     dialog.ui \
     dialogabonne.ui \
     dialogrec.ui \
     dialogreclamation.ui \
     dialogstad.ui \
     dialogstation.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    maquette_yesmin.ui
 
 
 
@@ -95,13 +96,18 @@ SUBDIRS += \
     SMTPEmail.pro \
     SMTPEmail.pro
 
-DISTFILES += \
-    Arabic2.ts \
-    H.txt \
-    LICENSE \
-    english.ts \
-    tran/Arabic2.qm \
-    tran/english2.qm
+#DISTFILES += \
+#    Arabic2.ts \
+#    H.txt \
+#    LICENSE \
+#    english.ts \
+#    tran/Arabic2.qm \
+#    tran/english2.qm
 
 RESOURCES += \
     images.qrc
+
+RESOURCES += \
+    Translations.qrc
+
+DISTFILES +=

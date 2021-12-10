@@ -123,6 +123,7 @@ void Smtpseif::connected()
 
 void Smtpseif::readyRead()
 {
+    QMessageBox messagebox;
 
      qDebug() <<"readyRead";
     // SMTP is line-oriented
@@ -241,6 +242,11 @@ void Smtpseif::readyRead()
         state = Close;
         emit status( tr( "Message sent" ) );
 
+        //program crashes here
+       // messagebox.information(0,"email sent","successful",messagebox.Close);
+
+
+
     }
     else if ( state == Close )
     {
@@ -250,7 +256,6 @@ void Smtpseif::readyRead()
     else
     {
         // something broke.
-        QMessageBox::warning( 0, tr( "Qt Simple SMTP client" ), tr( "Unexpected reply from SMTP server:\n\n" ) + response );
         state = Close;
         emit status( tr( "Failed to send message" ) );
     }

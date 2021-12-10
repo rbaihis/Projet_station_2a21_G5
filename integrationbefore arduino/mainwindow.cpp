@@ -15,6 +15,12 @@
 #include"dialogreclamation.h"
 //#include"dialogemployee.h"
 
+//yessmin
+#include <QApplication>
+#include "maquette_yesmin.h"
+#include <QTranslator>
+#include <QInputDialog>
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -38,7 +44,7 @@ void MainWindow::on_pb_gestionBus_clicked()
     Dialog d;
     d.setModal(true);
     d.exec();
-
+    this->close();
 
 }
 
@@ -48,7 +54,7 @@ void  MainWindow::on_pb_gestionabonne_clicked()
      Dialogabonne A;
      A.setModal(true);
      A.exec();
-
+    this->close();
 }
 
 
@@ -58,14 +64,38 @@ void MainWindow::on_pb_gestionStation_clicked()
      DialogStation S;
      S.setModal(true);
      S.exec();
+     this->close();
 }
 
 void MainWindow::on_pb_gestionReclamation_clicked()
 {
     this->hide();
-     DialogReclamation R;
-   R.setModal(true);
-    R.exec();
+
+    //yessmin
+
+    QTranslator t;
+    QTranslator guiTranslator;
+    QStringList languages;
+    languages << "English"<<"Frensh";
+    QString lang=QInputDialog::getItem(NULL,"Select Language","Language" , languages);
+    if (lang == "English" )
+    {
+        t.load(":/english2.qm");
+
+       guiTranslator.load("C:/Qt/Qt5.9.9/5.9.9/mingw53_32/translations/qtbase_en.qm");
+    } else if (lang == "Frensh")
+        t.load(":/arabic2.qm");
+    guiTranslator.load("C:/Qt/Qt5.9.9/5.9.9/mingw53_32/translations/qtbase_ar.qm");
+
+    if(lang!="francais")
+           {
+               QApplication::installTranslator(&t);
+               QApplication::installTranslator(&guiTranslator);
+           }
+
+    maquette_yesmin reclam;
+   reclam.setModal(true);
+    reclam.exec();
 }
 
 
