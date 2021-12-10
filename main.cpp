@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+//#include "mainwindow.h"
 #include "maquette_yesmin.h"
 #include <QApplication>
 #include <QMessageBox>
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
         }
 
 
-    MainWindow w;
+//    MainWindow w;
     maquette_yesmin y;
     Connection c;
     bool test=c.createconnect();

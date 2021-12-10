@@ -5,7 +5,7 @@
 #include <QMessageBox>
 #include <QIntValidator>
 #include"dialog.h"
-#include<arduinomaq.h>
+//#include<arduinomaq.h>
 maquette_yesmin::maquette_yesmin(QWidget *parent) : QDialog(parent),
 
     ui(new Ui::maquette_yesmin)
@@ -143,9 +143,9 @@ void maquette_yesmin::on_Trier_currentChanged(int index)
 
 }
 
-void maquette_yesmin::on_pb_arduino_clicked()
-{
-    arduinomaq *arduino;
-            arduino=new arduinomaq(this);
-            arduino->show();
-}
+//void maquette_yesmin::on_pb_arduino_clicked()
+//{
+//    arduinomaq *arduino;
+//        arduino=new arduinomaq(this);
+//        arduino->show();
+//}

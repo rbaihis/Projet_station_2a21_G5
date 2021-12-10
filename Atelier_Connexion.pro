@@ -25,28 +25,28 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
-    arduino.cpp \
-    arduinomaq.cpp \
+#    arduino.cpp \
+#    arduinomaq.cpp \
     dialog.cpp \
         main.cpp \
-        mainwindow.cpp \
+#        mainwindow.cpp \
     connection.cpp \
     maquette_yesmin.cpp \
     reclamation.cpp
 
 HEADERS += \
-    arduino.h \
-    arduinomaq.h \
+#    arduino.h \
+#    arduinomaq.h \
     dialog.h \
-        mainwindow.h \
+#        mainwindow.h \
     connection.h \
     maquette_yesmin.h \
     reclamation.h
 
 FORMS += \
-        arduinomaq.ui \
+#        arduinomaq.ui \
+#        mainwindow.ui \
         dialog.ui \
-        mainwindow.ui \
         maquette_yesmin.ui
 
 # Default rules for deployment.

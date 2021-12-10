@@ -36,7 +36,7 @@ private slots:
 
     void on_Trier_currentChanged(int index);
 
-    void on_pb_arduino_clicked();
+//    void on_pb_arduino_clicked();
 
 private:
     Ui::maquette_yesmin *ui;
